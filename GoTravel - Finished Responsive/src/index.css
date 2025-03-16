@@ -4,21 +4,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-800: "#EFF9FB";
-  --color-primary-700: "#18ABC6";
-  --color-primary-300: "#67C6E3";
-  --color-primary-100: "#EFF9FB";
+  --color-primary-800: #eff9fb;
+  --color-primary-700: #18abc6;
+  --color-primary-300: #67c6e3;
+  --color-primary-100: #eff9fb;
 
-  --color-grey-1000: "#151515";
-  --color-grey-900: "#6D6D6D";
-  --color-grey-800: "#797979";
-  --color-grey-700: "#7D7D7D";
-  --color-grey-600: "#D8D8D8";
-  --color-grey-500: "#B3B3B3";
-  --color-grey-400: "#C7C7C7";
-  --color-grey-300: "#D9D9D9";
+  --color-grey-1000: #151515;
+  --color-grey-900: #6d6d6d;
+  --color-grey-800: #797979;
+  --color-grey-700: #7d7d7d;
+  --color-grey-600: #8d8d8d;
+  --color-grey-500: #b3b3b3;
+  --color-grey-400: #c7c7c7;
+  --color-grey-300: #d9d9d9;
 
-  --color-yellow: "#FEC107";
+  --color-yellow: #fec107;
 
   --font-sans: "Poppins", "Helvetica Neue", Helvetica;
   --font-rubik: "Rubik", "Helvetica Neue", Helvetica;

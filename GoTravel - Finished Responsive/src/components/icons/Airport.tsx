@@ -1,8 +1,13 @@
-export default function Airport() {
+export default function Airport(props: { fill?: string; className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="47"
+      height="48"
+      className={props.className}
+    >
       <path
-        fill="#18ABC6"
+        fill={props.fill}
         fillRule="evenodd"
         d="m35.605 6.014-5.512 5.681c-5.65-1.155-28.277-6.72-28.573-6.34-.33.428-.447.722-1.11 1.577 6.527 5.095 13.177 9.966 19.722 15.03l-8.327 8.581L.2 31.29l10.201 6.097 5.726 10.318.72-11.92c2.723-2.783 5.466-5.548 8.203-8.317C30.018 34.279 34.79 41.204 39.785 48c.83-.686 1.114-.804 1.53-1.146.373-.308-5.2-24.347-6.2-29.703a376.347 376.347 0 0 0 5.573-5.954c9.78-10.683 5.59-16.184-5.083-5.183Z"
         clipRule="evenodd"
