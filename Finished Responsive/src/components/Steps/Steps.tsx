@@ -5,24 +5,24 @@ import Rating from "./Rating";
 export default function Steps() {
   return (
     <section className="px-24 py-36">
-      <div className="max-w-432 px-21.5 m-auto">
+      <div className="m-auto max-w-432 px-21.5">
         <div className="mt-4 text-center">
           <h2 className="tracking-6 mb-5 text-[3.25rem] font-semibold">
             Travel to make sweet memories
           </h2>
-          <p className="text-[1.75rem]/10.5 tracking-6 text-grey-700 font-light">
+          <p className="tracking-6 text-grey-700 text-[1.75rem]/10.5 font-light">
             Find the trips that flexible lifestyle
           </p>
         </div>
 
-        <div className="pt-26 flex justify-between">
+        <div className="flex justify-between pt-26">
           <ul className="flex max-w-min flex-col gap-y-14">
             {steps.map((step) => (
-              <li key={step.id} className="gap-y-4.5 flex flex-col">
-                <p className="px-5.5 bg-primary-700 w-min rounded-[.5rem] py-0.5 text-[1.375rem]/8 font-semibold text-white">
+              <li key={step.id} className="flex flex-col gap-y-4.5">
+                <p className="bg-primary-700 w-min rounded-[.5rem] px-5.5 py-0.5 text-[1.375rem]/8 font-semibold text-white">
                   {step.id}
                 </p>
-                <h3 className="text-[1.75rem]/10.5 tracking-6 w-max text-nowrap font-semibold">
+                <h3 className="tracking-6 w-max text-[1.75rem]/10.5 font-semibold text-nowrap">
                   {step.heading}
                 </h3>
                 <p className="text-grey-900 tracking-6 text-base/8 font-light">
@@ -46,14 +46,14 @@ export default function Steps() {
               name="Tiffany Miller"
               rating={4.6}
               img="./src/assets/headshots/tiffany.webp"
-              className="absolute left-0 top-28"
+              className="absolute top-28 left-0"
             />
             <Rating
               key={2}
               name="Amari Reece"
               rating={4.9}
               img="./src/assets/headshots/amari.webp"
-              className="absolute bottom-28 right-0"
+              className="absolute right-0 bottom-28"
             />
           </figure>
         </div>

@@ -1,6 +1,12 @@
-export default function LogoIconDark() {
+export default function LogoIconDark(props: { className: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="57" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="54"
+      height="57"
+      fill="none"
+      className={props.className}
+    >
       <rect width="49" height="49" fill="#0891AA" rx="7" />
       <rect width="49" height="49" x="5" y="5" fill="#fff" rx="7" />
       <path

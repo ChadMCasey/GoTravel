@@ -3,5 +3,5 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
-  return <header className="pb-23 px-24 pt-8">{props.children}</header>;
+  return <header className="px-24 pt-8 pb-23">{props.children}</header>;
 }

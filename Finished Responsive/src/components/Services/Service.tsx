@@ -1,21 +1,21 @@
-import { type Service } from "../../utils/contentTypes";
+import { type IService } from "../../utils/contentTypes";
 
-interface ServiceProps {
-  service: Service;
+interface IServiceProps {
+  service: IService;
 }
 
-export default function Service({ service }: ServiceProps) {
+export default function Service({ service }: IServiceProps) {
   return (
     <li
       key={service.id}
-      className="max-w-90 h-90 group flex flex-col justify-between"
+      className="group flex h-90 max-w-90 flex-col justify-between"
     >
-      <service.Icon className="h-26 group-first-of-type:h-30 place-self-center" />
+      <service.Icon className="h-26 place-self-center group-first-of-type:h-30" />
       <div className="text-center">
-        <h3 className="text-[1.75rem]/10.5 tracking-6 mb-9.5 text-nowrap font-semibold">
+        <h3 className="tracking-6 mb-9.5 text-[1.75rem]/10.5 font-semibold text-nowrap">
           {service.heading}
         </h3>
-        <p className="text-base/9.5 text-grey-900/85 tracking-6">
+        <p className="text-grey-900/85 tracking-6 text-base/9.5">
           {service.description}
         </p>
       </div>

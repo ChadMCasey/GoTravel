@@ -1,54 +1,97 @@
 import { JSX } from 'react';
 
-interface Identifiable {
+interface NavigationLink {
   id: number;
-}
-
-interface INavigationLink extends Identifiable {
   href: string;
   text: string;
   dropdown: boolean;
+  dropdownLinks?: NavigationLink[]
 }
 
-interface IHeroBenefit extends Identifiable {
+interface HeroBenefit {
+  id: number;
   Icon: (props: {className: string}) => JSX.Element;
   heading: string;
   description: string;
 }
 
-interface IStep extends Identifiable {
+interface Step {
+  id: number;
   heading: string;
   description: string;
 }
 
-interface IService extends Identifiable {
+interface Service {
+  id: number;
   Icon: (props: {className: string}) => JSX.Element;
   heading: string;
   description: string;
 }
 
-interface IBlogCard extends Identifiable {
+interface BlogPost {
+  id: string;
   img: string;
   alt: string;
   date: string,
-  heading: string,
-  description: string
+  title: string,
+  summary: string
 }
 
-interface ILocation extends Identifiable {
+interface Location {
+  id: string;
   img: string;
   alt: string;
   rating: number;
-  heading: string;
+  title: string;
   location: string;
-  price: number;
+  pricePerPerson: number;
+}
+
+interface Testimonial {
+  id: number;
+  img: string;
+  alt: string;
+  name: string;
+  description: string;
+  vacation: string; 
+}
+
+interface FooterLink {
+  id: number;
+  href: string;
+  name: string;
+  Icon?: (props: {className: string}) => JSX.Element;
+}
+
+interface FooterCol {
+  id: number;
+  heading: string;
+  links: FooterLink[];
+}
+
+interface FooterSocials {
+  id: number;
+  alt: string;
+  href: string;
+  Icon: (props: {className: string}) => JSX.Element;
+}
+
+interface Lead {
+  createdAt: number;
+  fullName: string;
+  emailAddress: string; 
 }
 
 export type {
-  INavigationLink,
-  IHeroBenefit,
-  IStep,
-  IService,
-  IBlogCard,
-  ILocation
+  NavigationLink,
+  HeroBenefit,
+  Step,
+  Service,
+  BlogPost,
+  Location,
+  Testimonial,
+  FooterCol,
+  FooterSocials,
+  FooterLink,
+  Lead
 }
